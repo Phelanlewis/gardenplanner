@@ -1,5 +1,8 @@
 <article class="listing">
-  <img src="{{vegetable.image}}" alt="">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    <img src="{{vegetable.image}}" alt="">
+    <small>View Larger</small>
+  </a>
   <h3>{{vegetable.title}}</h3>
   <div class="detail sun">
     <span>Type of Sun:</span> {{vegetable.sun}}
